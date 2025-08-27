@@ -1,38 +1,61 @@
-// Scripts otimizados para Magnológica
-
-// Parallax leve usando requestAnimationFrame
-document.addEventListener('scroll', () => {
-  window.requestAnimationFrame(() => {
-    document.querySelectorAll('.parallax').forEach(el => {
-      let scrolled = window.scrollY;
-      el.style.transform = `translateY(${scrolled * 0.3}px)`;
+// Animação ao rolar
+function animateOnScroll() {
+    const elements = document.querySelectorAll('.section-title, .section-text, .process-step, .highlight');
+    const windowHeight = window.innerHeight;
+    
+    elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementHeight = element.offsetHeight;
+        
+        if (elementTop < windowHeight - (elementHeight * 0.5)) {
+            element.classList.add('visible');
+        }
     });
-  });
-});
-
-// Equalizar altura dos cards
-function equalizeCardHeights() {
-  const cards = document.querySelectorAll('.valor-cards .card');
-  let maxHeight = 0;
-  cards.forEach(c => {
-    c.style.height = 'auto';
-    maxHeight = Math.max(maxHeight, c.offsetHeight);
-  });
-  cards.forEach(c => c.style.height = maxHeight + 'px');
 }
 
-window.addEventListener('load', equalizeCardHeights);
-window.addEventListener('resize', equalizeCardHeights);
+// Ajustar dinamicamente a altura dos containers
+function adjustContainerHeights() {
+    document.querySelectorAll('.parallax-container').forEach(container => {
+        const contentHeight = container.querySelector('.content-wrapper').offsetHeight;
+        const minHeight = Math.max(window.innerHeight, contentHeight + 200);
+        container.style.minHeight = `${minHeight}px`;
+    });
+}
 
-// Fade-in com IntersectionObserver
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.2 });
+// Garantir que todas as seções sejam visíveis
+function ensureVisibility() {
+    const sections = document.querySelectorAll('.parallax-container');
+    
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            section.style.opacity = 1;
+        }
+    });
+}
 
-document.querySelectorAll('.hero, .valor-cards .card, .site-footer').forEach(el => {
-  observer.observe(el);
+// Efeito parallax
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const containers = document.querySelectorAll('.parallax-container');
+    
+    containers.forEach((container, index) => {
+        const speed = 0.3 + (index * 0.1);
+        container.style.backgroundPosition = `center ${-scrollY * speed}px`;
+    });
+    
+    animateOnScroll();
+});
+
+// Inicializar
+window.addEventListener('load', () => {
+    animateOnScroll();
+    adjustContainerHeights();
+    ensureVisibility();
+});
+
+// Ajustar ao redimensionar
+window.addEventListener('resize', () => {
+    adjustContainerHeights();
+    animateOnScroll();
 });
