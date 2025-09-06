@@ -3,87 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magnológica - Excelência em Presença Digital</title>
+    <title>Magnológica Blog - Excelência em Conteúdo Digital</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Seção 1: A Essência da Magnológica -->
-    <section class="parallax-container" id="essencia">
-        <div id="particles-js"></div>
-        <div class="carbon-texture"></div>
-        <div class="floating-diamonds" id="diamonds-1"></div>
-        <div class="content-wrapper">
-            <h1 class="section-title">A Essência da Magnológica</h1>
-            <p class="section-text">Nós transcendemos o conceito de agência digital. Somos arquitetos de resultados tangíveis. Acreditamos que a excelência não é um destino, mas a arte de agir com maestria a cada dia. É por isso que nosso pilar mais sólido é a Prospecção Diária - a capacidade de conectar seu negócio com até 50 oportunidades de ouro.</p>
+    <!-- Header -->
+    <header class="blog-header">
+        <a href="#" class="logo">Magnológica <span>Blog</span></a>
+        
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-link">Início</a></li>
+            <li><a href="#" class="nav-link">Artigos</a></li>
+            <li><a href="#" class="nav-link">Categorias</a></li>
+            <li><a href="#" class="nav-link">Sobre</a></li>
+            <li><a href="#" class="nav-link">Contato</a></li>
+        </ul>
+        
+        <div class="header-actions">
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
         </div>
-    </section>
-    
-    <!-- Seção 2: Quem Somos -->
-    <section class="parallax-container" id="quem-somos">
-        <div id="particles-js-2"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div id="particles-js-hero"></div>
         <div class="carbon-texture"></div>
-        <div class="floating-diamonds" id="diamonds-2"></div>
-        <div class="content-wrapper">
-            <h2 class="section-title">Quem Somos</h2>
-            <p class="section-text">Nascemos no coração de Recife com uma missão revolucionária: transformar a forma como empresas locais conquistam o mundo. Nossa abordagem é direta e profundamente pessoal. Não esperamos você vir até nós - nós vamos até você, deciframos sua essência e transformamos sua visão em uma realidade digital que gera vendas reais. Não somos prestadores de serviço; somos parceiros obsessivos pelo seu crescimento.</p>
-        </div>
-    </section>
-    
-    <!-- Seção 3: Nosso Processo -->
-    <section class="parallax-container" id="processo">
-        <div id="particles-js-3"></div>
-        <div class="carbon-texture"></div>
-        <div class="floating-diamonds" id="diamonds-3"></div>
-        <div class="content-wrapper">
-            <h2 class="section-title">Nosso Processo: A Máquina de Clientes</h2>
-            <p class="section-text">Nossa excelência é meticulosamente construída. Cada etapa de nosso processo foi arquitetada para extrair o máximo valor e converter sua presença digital em fluxo contínuo de receita.</p>
+        <div class="floating-diamonds" id="diamonds-hero"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Excelência em Conteúdo Digital</h1>
+            <p class="hero-subtitle">Explore artigos premium sobre marketing digital, transformação visual e estratégias de crescimento para negócios</p>
             
-            <div class="process-container">
-                <div class="process-step">
-                    <i class="fas fa-camera-retro step-icon"></i>
-                    <h3 class="step-title">A Visita e a Captura</h3>
-                    <p class="step-text">Nosso trabalho nasce onde seu negócio pulsa. Estamos ao seu lado para capturar a alma da sua marca com imagens e vídeos cinematográficos. Cada frame é uma declaração de credibilidade para sua empresa.</p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <i class="far fa-calendar"></i>
+                    <span>28 de Maio, 2023</span>
                 </div>
-                
-                <div class="process-step">
-                    <i class="fas fa-magic step-icon"></i>
-                    <h3 class="step-title">A Transformação Visual</h3>
-                    <p class="step-text">As imagens capturadas passam por uma metamorfose visual. Nossos artistas digitais eliminam cada imperfeição, apresentando seu negócio com uma qualidade premium que multiplica o valor percebido de sua marca.</p>
+                <div class="meta-item">
+                    <i class="far fa-clock"></i>
+                    <span>5 min de leitura</span>
                 </div>
-                
-                <div class="process-step">
-                    <i class="fas fa-rocket step-icon"></i>
-                    <h3 class="step-title">O Motor de Prospecção</h3>
-                    <p class="step-text">Nosso superpoder. Construímos sua fortaleza digital e otimizamos sua presença em todo o ecossistema digital. Do Google Meu Negócio à sinfonia das redes sociais, criamos uma máquina de visibilidade imbatível.</p>
+                <div class="meta-item">
+                    <i class="far fa-user"></i>
+                    <span>Por Equipe Magnológica</span>
                 </div>
             </div>
-            
-            <div class="glowing-line"></div>
-            
-            <div class="highlight">
-                <p>Gerando até 50 oportunidades premium diárias para seu negócio</p>
+        </div>
+    </section>
+
+    <!-- Main Blog Content -->
+    <main class="blog-container">
+        <div class="articles-grid">
+            <!-- Article 1 -->
+            <article class="article-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1015&q=80" alt="Marketing Digital" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">Marketing</span>
+                    <h2 class="article-title">Como a Prospecção Diária Pode Transformar Seu Negócio</h2>
+                    <p class="article-excerpt">Descubra estratégias comprovadas para gerar até 50 oportunidades premium diárias e aumentar suas conversões.</p>
+                    <div class="article-meta">
+                        <div class="article-author">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80" alt="Author" class="author-avatar">
+                            <span>Carlos Silva</span>
+                        </div>
+                        <div class="article-date">20 Maio, 2023</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-card">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Web Design" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">Design</span>
+                    <h2 class="article-title">A Importância do Design Premium para o Sucesso Digital</h2>
+                    <p class="article-excerpt">Entenda como uma transformação visual estratégica pode multiplicar o valor percebido da sua marca.</p>
+                    <div class="article-meta">
+                        <div class="article-author">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Author" class="author-avatar">
+                            <span>Amanda Costa</span>
+                        </div>
+                        <div class="article-date">15 Maio, 2023</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-card">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Business" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">Estratégia</span>
+                    <h2 class="article-title">Parcerias Estratégicas: Tecendo Redes de Sucesso</h2>
+                    <p class="article-excerpt">Aprenda a identificar e conectar-se com parceiros estratégicos para expandir seus negócios B2B.</p>
+                    <div class="article-meta">
+                        <div class="article-author">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Author" class="author-avatar">
+                            <span>Ricardo Almeida</span>
+                        </div>
+                        <div class="article-date">10 Maio, 2023</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="article-card">
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Finance" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">Gestão</span>
+                    <h2 class="article-title">Gestão Financeira Inteligente para Negócios Digitais</h2>
+                    <p class="article-excerpt">Conheça as ferramentas e estratégias para manter a saúde financeira do seu negócio em crescimento.</p>
+                    <div class="article-meta">
+                        <div class="article-author">
+                            <img src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Author" class="author-avatar">
+                            <span>Patrícia Lima</span>
+                        </div>
+                        <div class="article-date">5 Maio, 2023</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="article-card">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Team" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">Liderança</span>
+                    <h2 class="article-title">Cultura de Excelência: Construindo Equipes de Alta Performance</h2>
+                    <p class="article-excerpt">Desenvolva uma cultura organizacional focada em excelência e resultados tangíveis.</p>
+                    <div class="article-meta">
+                        <div class="article-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Author" class="author-avatar">
+                            <span>Marcos Oliveira</span>
+                        </div>
+                        <div class="article-date">1 Maio, 2023</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="article-card">
+                <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Content" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">Conteúdo</span>
+                    <h2 class="article-title">Storytelling Premium: Como Contar a História da Sua Marca</h2>
+                    <p class="article-excerpt">A arte de comunicar valores e diferencial competitivo através de narrativas autênticas.</p>
+                    <div class="article-meta">
+                        <div class="article-author">
+                            <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Author" class="author-avatar">
+                            <span>Juliana Santos</span>
+                        </div>
+                        <div class="article-date">28 Abril, 2023</div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+            <!-- About Widget -->
+            <div class="sidebar-widget about-widget">
+                <h3 class="widget-title">Sobre Nós</h3>
+                <p>Somos arquitetos de resultados tangíveis. Acreditamos que a excelência não é um destino, mas a arte de agir com maestria a cada dia.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Categorias</h3>
+                <ul class="categories-list">
+                    <li class="category-item">
+                        <a href="#" class="category-link">
+                            <span>Marketing Digital</span>
+                            <span class="category-count">12</span>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="category-link">
+                            <span>Design Premium</span>
+                            <span class="category-count">8</span>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="category-link">
+                            <span>Estratégia de Crescimento</span>
+                            <span class="category-count">10</span>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="category-link">
+                            <span>Gestão Financeira</span>
+                            <span class="category-count">5</span>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="category-link">
+                            <span>Liderança</span>
+                            <span class="category-count">7</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Popular Posts Widget -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Artigos Populares</h3>
+                <ul class="popular-posts">
+                    <li class="popular-post">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1015&q=80" alt="Popular Post" class="popular-post-img">
+                        <div class="popular-post-content">
+                            <h4><a href="#">Como a Prospecção Diária Pode Transformar Seu Negócio</a></h4>
+                            <span class="popular-post-date">20 Maio, 2023</span>
+                        </div>
+                    </li>
+                    <li class="popular-post">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Popular Post" class="popular-post-img">
+                        <div class="popular-post-content">
+                            <h4><a href="#">A Importância do Design Premium para o Sucesso Digital</a></h4>
+                            <span class="popular-post-date">15 Maio, 2023</span>
+                        </div>
+                    </li>
+                    <li class="popular-post">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Popular Post" class="popular-post-img">
+                        <div class="popular-post-content">
+                            <h4><a href="#">Parcerias Estratégicas: Tecendo Redes de Sucesso</a></h4>
+                            <span class="popular-post-date">10 Maio, 2023</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Widget -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Newsletter</h3>
+                <p>Inscreva-se para receber conteúdos exclusivos e estratégias premium diretamente no seu e-mail.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Seu melhor e-mail">
+                    <button type="submit" class="newsletter-btn">Assinar</button>
+                </form>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Pagination -->
+    <div class="blog-pagination">
+        <ul class="pagination-list">
+            <li class="pagination-item"><a href="#" class="active">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <div class="footer-content">
+            <div class="footer-widget">
+                <h3>Magnológica Blog</h3>
+                <p>Excelência em conteúdo digital. Transformamos conhecimento em vantagem competitiva para seu negócio.</p>
             </div>
             
-            <div class="neon-text">A Máquina de Parcerias</div>
-            <p class="section-text">Para nossos clientes B2B, transcendemos a tecnologia. Entregamos uma lista exclusiva com 50 parceiros estratégicos, pré-qualificados e prontos para fechar negócios com você. Não construímos apenas presença; tecemos redes de sucesso.</p>
-        </div>
-    </section>
-    
-    <!-- Seção 4: Além do Digital -->
-    <section class="parallax-container" id="alem-digital">
-        <div id="particles-js-4"></div>
-        <div class="carbon-texture"></div>
-        <div class="floating-diamonds" id="diamonds-4"></div>
-        <div class="content-wrapper">
-            <h2 class="section-title">Além do Digital</h2>
-            <p class="section-text">Nossa missão não se encerra com um site no ar. Ela evolui com seu crescimento. Por isso, desenvolvemos uma ferramenta de gestão financeira inteligente, pois compreendemos que a saúde do seu negócio transcende o marketing. Somos sua extensão estratégica, dominando o digital para que você reine no que faz de melhor.</p>
-            <p class="section-text" style="font-weight: 600; font-size: 1.8rem; margin-top: 3rem; font-style: italic;">Nossa excelência é sua vantagem competitiva perpétua.</p>
+            <div class="footer-widget">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">Início</a></li>
+                    <li class="footer-link"><a href="#">Artigos</a></li>
+                    <li class="footer-link"><a href="#">Categorias</a></li>
+                    <li class="footer-link"><a href="#">Sobre</a></li>
+                    <li class="footer-link"><a href="#">Contato</a></li>
+                </ul>
+            </div>
             
-            <a href="#" class="cta-button">Desbloqueie seu pacote de crescimento</a>
+            <div class="footer-widget">
+                <h3>Categorias</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">Marketing Digital</a></li>
+                    <li class="footer-link"><a href="#">Design Premium</a></li>
+                    <li class="footer-link"><a href="#">Estratégia de Crescimento</a></li>
+                    <li class="footer-link"><a href="#">Gestão Financeira</a></li>
+                    <li class="footer-link"><a href="#">Liderança</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-widget">
+                <h3>Contato</h3>
+                <p>Recife, PE - Brasil</p>
+                <p>contato@magnologica.com</p>
+                <p>+55 (81) 99999-9999</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
         </div>
-    </section>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Magnológica Blog. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
